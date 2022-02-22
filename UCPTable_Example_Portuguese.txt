@@ -1,0 +1,31 @@
+//*********************************************************************************************************************
+// Universal Command Parser - UCP
+// File: UCPTable.c
+// 2022 - Claudio Sonaglio
+//*********************************************************************************************************************
+#include "UCPParser.h"
+
+UCPTableType UCPParseTable[UCP_TABLE_SIZE] =
+{
+//  { "string<sq>", next line }
+    { "Eu \x1",      3 }, //  0
+    { "Voce \x1",    6 }, //  1
+    { UCPBKENDSTR,   0 },
+    { "sou \x1",     9 }, //  3
+    { "tenho \x1",  14 }, //  4
+    { UCPBKENDSTR,   0 },
+    { "eh \x1",      9 }, //  6
+    { "tem \x1",    14 }, //  7
+    { UCPBKENDSTR,   0 },
+    { "bonito.",     0 }, //  9
+    { "feio.",       0 }, // 10
+    { "pobre.",      0 }, // 11
+    { "rico.",       0 }, // 12
+    { UCPBKENDSTR,   0 },
+    { "dinheiro.",   0 }, // 14
+    { "medo de \x1",18 }, // 15
+    { "tempo.",      0 }, // 16
+    { UCPBKENDSTR,   0 },
+    { "fantasmas.",  0 }, // 18
+    { "vampiros.",   0 }, // 19
+    { UCPBKENDSTR,   0 }};
